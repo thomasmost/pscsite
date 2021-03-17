@@ -1,0 +1,30 @@
+{
+  "name": "gatsby-starter-catalyst-hydrogen-studio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "package.json",
+  "author": "Eric Howey <ehowey@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "sanity start",
+    "test": "sanity check"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/base": "^2.3.7",
+    "@sanity/color-input": "^2.2.6",
+    "@sanity/components": "^2.2.6",
+    "@sanity/core": "^2.3.3",
+    "@sanity/default-layout": "^2.3.7",
+    "@sanity/default-login": "^2.2.6",
+    "@sanity/desk-tool": "^2.3.7",
+    "prop-types": "^15.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-icons": "^3.11.0"
+  },
+  "devDependencies": {}
+}
