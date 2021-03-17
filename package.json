@@ -20,6 +20,7 @@
   ],
   "license": "MIT",
   "scripts": {
+    "build_sanity": "cd sanity-studio && sanity build",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "clean": "gatsby clean",
