@@ -4,6 +4,7 @@ import { baseColors } from "@theme-ui/preset-tailwind"
 
 export default merge(BaseTheme, {
   colors: {
+    background: baseColors.green[1],
     primary: baseColors.green[8],
     secondary: baseColors.green[5],
     accent: baseColors.green[1],
@@ -15,6 +16,9 @@ export default merge(BaseTheme, {
       icons: baseColors.gray[6],
       iconsHover: baseColors.green[8],
       iconsOpen: baseColors.gray[6],
+    },
+    body: {
+      background: baseColors.green[1],
     },
     footer: {
       background: baseColors.gray[2],
