@@ -5,6 +5,7 @@
   "private": true,
   "author": "Eric Howey <eric@erichowey.dev>",
   "dependencies": {
+    "@sanity/cli": "^2.6.0",
     "gatsby": "^2.24.58",
     "gatsby-theme-catalyst-hydrogen": "^5.1.5",
     "react": "^16.13.1",
