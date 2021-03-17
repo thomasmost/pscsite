@@ -4,16 +4,16 @@ import { baseColors } from "@theme-ui/preset-tailwind"
 
 export default merge(BaseTheme, {
   colors: {
-    primary: baseColors.red[8],
-    secondary: baseColors.red[5],
-    accent: baseColors.gray[2],
+    primary: baseColors.green[8],
+    secondary: baseColors.green[5],
+    accent: baseColors.green[1],
     header: {
       background: "transparent",
-      backgroundOpen: baseColors.red[1],
+      backgroundOpen: baseColors.green[1],
       text: baseColors.gray[8],
       textOpen: baseColors.gray[8],
       icons: baseColors.gray[6],
-      iconsHover: baseColors.red[8],
+      iconsHover: baseColors.green[8],
       iconsOpen: baseColors.gray[6],
     },
     footer: {
@@ -22,6 +22,11 @@ export default merge(BaseTheme, {
       links: baseColors.gray[8],
       icons: baseColors.gray[8],
     },
+  },
+  fonts: {
+    body: "Trebuchet, system-ui, sans-serif",
+    heading: "Georgia, system-ui, serif",
+    monospace: "Menlo, monospace",
   },
   styles: {
     h1: {
