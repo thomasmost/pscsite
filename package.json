@@ -6,6 +6,7 @@
   "author": "Eric Howey <eric@erichowey.dev>",
   "dependencies": {
     "@sanity/cli": "^2.6.0",
+    "@sanity/core": "^2.6.2",
     "gatsby": "^2.24.58",
     "gatsby-theme-catalyst-hydrogen": "^5.1.5",
     "react": "^16.13.1",
@@ -21,7 +22,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build_sanity": "cd sanity-studio && sanity build",
+    "build_sanity": "cd sanity-studio && sanity install && sanity build",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "clean": "gatsby clean",
