@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-catalyst-hydrogen",
-  "description": "Gatsby Starter: Gatsby-Theme-Catalyst-Hydrogen",
+  "name": "peoples-school-of-conflict",
+  "description": "People's School of Conflict Website",
   "version": "5.1.5",
   "private": true,
-  "author": "Eric Howey <eric@erichowey.dev>",
+  "author": "Thomas Moore <tomismore@gmail.com>",
   "dependencies": {
     "@sanity/cli": "^2.6.0",
     "@sanity/core": "^2.6.2",

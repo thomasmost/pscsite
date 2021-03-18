@@ -5,7 +5,7 @@
     "dataset": "production"
   },
   "project": {
-    "name": "gatsby-theme-catalyst-hydrogen"
+    "name": "People's School of Conflict"
   },
   "plugins": [
     "@sanity/base",
