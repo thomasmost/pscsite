@@ -4,6 +4,11 @@ export default {
   title: "Site Settings",
   fields: [
     {
+      name: "live",
+      type: "boolean",
+      title: "Site Live"
+    },
+    {
       name: "title",
       type: "string",
       title: "Site Title",
