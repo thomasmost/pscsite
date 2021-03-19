@@ -16,7 +16,7 @@ function useSiteLive(): SiteLive {
   `)
 
   // Return directly wanted data
-  return data.allSanitySiteSettings.nodes
+  return data.allSanitySiteSettings.nodes[0]
   // return { live: true }
 }
 
