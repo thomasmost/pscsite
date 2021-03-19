@@ -6,9 +6,9 @@ export interface SiteLive{
 
 function useSiteLive(): SiteLive {
   const data = useStaticQuery(graphql`
-    allSanitySiteSettings {
-      edges {
-        node {
+    query {
+      allSanitySiteSettings(limit: 1, sort: { fields: _updatedAt, order: DESC }) {
+        nodes {
           live
         }
       }
@@ -16,7 +16,8 @@ function useSiteLive(): SiteLive {
   `)
 
   // Return directly wanted data
-  return data.allSanitySiteSettings.edges.node
+  return data.allSanitySiteSettings.nodes
+  // return { live: true }
 }
 
 export default useSiteLive

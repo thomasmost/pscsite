@@ -6,7 +6,8 @@ export default {
     {
       name: "live",
       type: "boolean",
-      title: "Site Live"
+      title: "Site Live",
+      validation: (Rule) => Rule.required(),
     },
     {
       name: "title",
