@@ -32,44 +32,52 @@ const Hero = () => {
         position: "relative",
         left: "calc(-50vw + 50%)",
         mt: -3,
-        mb: 5,
+        mb: 6,
       }}
     >
       <div
         sx={{
           width: "100%",
-          backgroundColor: "accent",
         }}
       >
         <div
           sx={{
-            display: "flex",
-            flexDirection: ["column", null, "row", null, null],
             width: "100%",
             height: ["auto", null, "auto", null, null],
             minHeight: ["initial", null, "500px", null, null],
-            backgroundColor: "accent",
-            maxWidth: "maxPageWidth",
+            maxWidth: "800px",
             mx: "auto",
             my: 0,
           }}
         >
           <Img
             sx={{
-              width: "100%",
-              height: ["300px", null, "auto", null, null],
+              width: "66%",
+              margin: "auto",
+              marginTop: "50px",
+              maxWidth: "380px",
             }}
             fluid={hero.heroImage.asset.fluid}
             alt={hero.heroTitle}
           />
           <div
             sx={{
-              alignSelf: "center",
+              margin: "auto",
+              textAlign: "center",
               py: [5, null, 4, null, null],
               px: [3, null, 4, null, null],
               minWidth: ["100%", null, "50vw", null, null],
             }}
           >
+            <div
+              sx={{
+                fontFamily: "heading",
+                fontWeight: "heading",
+                lineHeight: "heading",
+                fontStyle: "italic",
+              }}>
+              "Who keeps us safe?"
+            </div>
             <h1
               sx={{
                 fontFamily: "heading",
@@ -77,23 +85,22 @@ const Hero = () => {
                 lineHeight: "heading",
                 fontSize: 6,
                 m: 0,
-                py: 4,
+                py: 3,
                 mt: 0,
-                mb: 4,
+                mb: 3,
               }}
             >
               {hero.heroTitle}
             </h1>
-            <div sx={{ mt: 0, mb: 4 }}>
-              <SanityContent data={hero._rawHeroText} />
-            </div>
             <div
               sx={{
+                margin: "auto",
+                width: "320px",
                 display: "grid",
-                gridGap: [3, 4, null, null, null],
+                gridGap: [3, 3, null, null, null],
                 gridTemplateColumns: [
                   "auto",
-                  "auto auto 1fr",
+                  "auto auto",
                   null,
                   null,
                   null,
@@ -104,6 +111,9 @@ const Hero = () => {
               <ButtonPrimary to="/work">Materials</ButtonPrimary>
               <ButtonSecondary to="/about">About Us</ButtonSecondary>
             </div>
+            {Boolean(hero._rawHeroText) && <div sx={{ mt: 4, mb: 4 }}>
+              <SanityContent data={hero._rawHeroText} />
+            </div>}
           </div>
         </div>
       </div>

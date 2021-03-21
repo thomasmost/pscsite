@@ -20,8 +20,7 @@ export default {
     {
       title: "Hero Text",
       name: "heroText",
-      type: "blockContent",
-      validation: Rule => Rule.required(),
+      type: "blockContent"
     },
     {
       title: "Hero Image",

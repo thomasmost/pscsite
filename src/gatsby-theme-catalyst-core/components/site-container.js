@@ -9,6 +9,7 @@ const SiteContainer = ({ children }) => {
   return (
     <div
       sx={{
+        background: "linear-gradient(to right, #92ff92, #e7fcbe)",
         minHeight: "100vh",
         display: "grid",
         gridTemplateColumns: "minmax(0, 1fr)",
