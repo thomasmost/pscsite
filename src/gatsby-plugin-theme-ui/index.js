@@ -21,7 +21,9 @@ export default merge(BaseTheme, {
       background: baseColors.green[1],
     },
     footer: {
-      background: baseColors.gray[2],
+      // not sure about this change but the old color wasn't great
+      background: "transparent",
+      backgroundColor: "transparent",
       text: baseColors.gray[8],
       links: baseColors.gray[8],
       icons: baseColors.gray[8],
