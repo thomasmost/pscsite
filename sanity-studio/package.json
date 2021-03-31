@@ -7,7 +7,7 @@
   "author": "Eric Howey <ehowey@gmail.com>",
   "license": "UNLICENSED",
   "scripts": {
-    "build_sanity": "yarn install && sanity install && sanity build && cp netlify.toml dist/netlify.toml",
+    "build_sanity": "yarn install && sanity install && sanity build",
     "start": "sanity start",
     "test": "sanity check"
   },
