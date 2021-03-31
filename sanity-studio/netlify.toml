@@ -1,5 +1,11 @@
 [[redirects]]
-  from = "/*"
+  from = "/desk"
   to = "/"
   status = 301
-  force = true
+  force = false
+
+[[redirects]]
+  from = "/dashboard"
+  to = "/"
+  status = 301
+  force = false
