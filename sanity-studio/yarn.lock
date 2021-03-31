@@ -955,6 +955,10 @@
     get-random-values "^1.2.0"
     lodash "^4.17.15"
 
+"@sanity/cli@^2.7.2":
+  version "2.7.2"
+  resolved "https://registry.npmjs.org/@sanity/cli/-/cli-2.7.2.tgz#96317fdb52bcfd2962cb0c9e0f7f06e0125348e3"
+
 "@sanity/client@2.7.1":
   version "2.7.1"
   resolved "https://registry.npmjs.org/@sanity/client/-/client-2.7.1.tgz#0163ecad3ad0875dac5a87bfa20a1652dd3e6a80"
