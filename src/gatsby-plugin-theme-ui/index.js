@@ -30,8 +30,8 @@ export default merge(BaseTheme, {
     },
   },
   fonts: {
-    body: "Trebuchet, system-ui, sans-serif",
-    heading: "Georgia, system-ui, serif",
+    body: "Catamaran, system-ui, sans-serif",
+    heading: "'Kiwi Maru', system-ui, serif",
     monospace: "Menlo, monospace",
   },
   styles: {

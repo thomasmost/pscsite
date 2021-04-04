@@ -26,6 +26,16 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Catamaran`,
+          `Kiwi Maru`
+        ],
+        display: 'swap'
+      }
+    },
+    {
       resolve: `gatsby-theme-catalyst-hydrogen`,
       options: {
         // Example for an env variable
