@@ -95,7 +95,7 @@ const Hero = () => {
             <div
               sx={{
                 margin: "auto",
-                width: "320px",
+                width: "280px",
                 display: "grid",
                 gridGap: [3, 3, null, null, null],
                 gridTemplateColumns: [
