@@ -108,7 +108,7 @@ const Hero = () => {
                 justifyItems: ["stretch", "start", null, null, null],
               }}
             >
-              <ButtonPrimary to="/materials">Materials</ButtonPrimary>
+              <ButtonPrimary to="/work">Work</ButtonPrimary>
               <ButtonSecondary to="/about">About Us</ButtonSecondary>
             </div>
             {Boolean(hero._rawHeroText) && <div sx={{ mt: 4, mb: 4 }}>
