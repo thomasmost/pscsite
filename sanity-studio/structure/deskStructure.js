@@ -8,6 +8,7 @@ import {
   MdInsertDriveFile,
   MdPerson,
   MdDashboard,
+  MdContacts,
 } from "react-icons/md"
 
 const hiddenDocTypes = (listItem) =>
@@ -24,6 +25,7 @@ const hiddenDocTypes = (listItem) =>
     "page",
     "theme",
     "workPage",
+    "contactPage",
     "author",
     "category",
   ].includes(listItem.getId())
@@ -71,6 +73,10 @@ export default () =>
         .title("Home Page")
         .icon(MdHome)
         .child(S.editor().schemaType("homePage").documentId("homePage")),
+      S.listItem()
+        .title("Contact Page")
+        .icon(MdContacts)
+        .child(S.editor().schemaType("contactPage").documentId("contactPage")),
       S.listItem()
         .title("Work Page")
         .icon(MdInsertDriveFile)
