@@ -1,10 +1,39 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import ButtonPrimary from "../button-primary.js"
 import ButtonSecondary from "../button-secondary"
 import { SanityContent } from "gatsby-theme-catalyst-sanity"
+
+
+// query MyQuery {
+//   allSanityContactPage {
+//     edges {
+//       node {
+//         id
+//         featuredImage {
+//           _key
+//           _type
+//           caption
+//           alt
+//           _rawAsset
+//           _rawHotspot
+//           _rawCrop
+//         }
+//         body {
+//           _key
+//           _type
+//           style
+//           list
+//           _rawChildren
+//         }
+//         title
+//       }
+//     }
+//   }
+// }
+
 
 const Hero = () => {
   const data = useStaticQuery(graphql`
@@ -14,17 +43,13 @@ const Hero = () => {
           heroTitle
           _rawHeroText
           heroImage {
-            asset {
-              fluid(maxWidth: 1024) {
-                ...GatsbySanityImageFluid
-              }
-            }
+            asset
           }
         }
       }
     }
   `)
-  const hero = data.allSanityHomePage.nodes[0]
+  const hero = data.allSanityPage.nodes[0]
   return (
     <section
       sx={{
@@ -50,14 +75,14 @@ const Hero = () => {
             my: 0,
           }}
         >
-          <Img
+          <GatsbyImage
             sx={{
               width: "66%",
               margin: "auto",
               marginTop: "50px",
               maxWidth: "380px",
             }}
-            fluid={hero.heroImage.asset.fluid}
+            fluid={hero.heroImage.asset}
             alt={hero.heroTitle}
           />
           <div

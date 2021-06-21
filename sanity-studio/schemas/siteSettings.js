@@ -4,12 +4,6 @@ export default {
   title: "Site Settings",
   fields: [
     {
-      name: "live",
-      type: "boolean",
-      title: "Site Live",
-      validation: (Rule) => Rule.required(),
-    },
-    {
       name: "title",
       type: "string",
       title: "Site Title",

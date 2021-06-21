@@ -9,16 +9,12 @@ export default ({ data }) => {
 export const query = graphql`
   query SanityContactPageQuery {
     allSanityContactPage(limit: 1, sort: { fields: _updatedAt, order: DESC }) {
-      nodes {
-        title
-        featuredImage {
-          alt
-          asset {
-            gatsbyImageData(
-              width: 900
-              layout: CONSTRAINED
-              placeholder: BLURRED
-            )
+      edges {
+        node {
+          id
+          title
+          featuredImage {
+            alt
           }
         }
       }
